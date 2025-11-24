@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api" || "https://gym-to-do.onrender.com/api",
+  baseURL: "https://gym-to-do.onrender.com/api" || "http://localhost:5000/api",
   withCredentials: true,
 });
 
