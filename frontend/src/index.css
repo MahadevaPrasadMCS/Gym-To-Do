@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-theme {
+  @apply w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-sm text-white
+  outline-none transition-all focus:border-emerald-400 focus:shadow-[0_0_12px_rgba(0,255,171,0.4)];
+}
+
+.input-auth {
+  @apply w-full bg-white/15 border border-white/30 rounded-xl px-4 py-3
+  text-base font-semibold text-white placeholder:text-gray-300
+  outline-none transition-all
+  focus:border-violet-400 focus:shadow-[0_0_15px_rgba(139,92,246,0.7)];
+}
+
+.btn-primary {
+  @apply bg-emerald-500 hover:bg-emerald-600 rounded-xl py-2 text-sm font-semibold
+  flex justify-center items-center gap-2 transition-all active:scale-95 disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply bg-blue-600 hover:bg-blue-500 text-white py-2 rounded-xl text-sm
+  font-semibold flex justify-center items-center gap-2 transition active:scale-95;
+}
+
+.glass-card {
+  @apply bg-slate-900/60 border border-slate-800 backdrop-blur-xl rounded-2xl shadow-[0_0_30px_rgba(0,200,255,0.15)];
+}
+
+.form-label {
+  @apply block text-xs font-medium text-gray-300 mb-1;
+}
+
+.pill-btn {
+  @apply border border-slate-700 px-3 py-1 rounded-full text-xs bg-slate-800
+  hover:bg-slate-700 hover:border-blue-400 transition;
+}
+
+@keyframes loginFade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+.animate-loginFade { animation: loginFade 0.7s ease-out; }
