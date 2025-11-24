@@ -32,7 +32,7 @@ app.use("/api/daily-logs", dailyLogsRoutes);
 app.use("/api/foods", foodRoutes);
 app.use("/api/weekly-checkins", weeklyCheckinsRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 // Connect DB + Seed Default Foods
 mongoose
